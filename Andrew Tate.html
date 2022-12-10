@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>Mooi informatica opdrachtje</title>
+
+<ul>
+  <li><a href="file:///D:/Informatica%20zijk/2e%20web.html" target="_blank">Tate</a></li>
+  <li><a href="https://nos.nl/" target="_blank">News</a></li>
+  <li><a href="">Contact</a></li>
+  <li><a href="https://www.instagram.com/yannick_schaap/" target="_blank">Insta</a></li>
+</ul>
+
+<h1 style="color:rgb(0, 0, 0);">een mooi informatica opdrachtje</h1>
+
+<div id="myDIV">
+<hr>
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(60, 60, 60);
+  }
+  </style>
+<style>
+h1 {
+    text-align: center;
+}
+</style>
+
+<p style="text-align:center">
+  <a href="https://www.fcgroningen.nl/" target="_blank">
+    <img src="fotos/FCG.png" width="250" height="250"></a>
+</p>
+
+<hr>
+</div>
+<br>
+
+<button onclick="myFunction2()">wit</button>
+<button onclick="myFunction3()">zwart</button>
+<button onclick="myFunction()">rood</button>
+<button onclick="myFunction4()">groen</button>
+
+<script>
+function myFunction(){
+  document.getElementById("myDIV").style.backgroundColor ="red";
+}
+</script>
+
+<br>
+
+<style>
+table, th, td {
+  border:1px solid rgb(0, 0, 0);
+}
+</style>
+
+
+<script>
+    function myFunction2() {
+     document.getElementById("myDIV").style.backgroundColor = "white";
+    }
+    </script>
+
+<script>
+  function myFunction3() {
+    document.getElementById("myDIV").style.backgroundColor = "black";
+  }
+  </script>
+
+<script>
+  function myFunction4(){
+  document.getElementById("myDIV").style.backgroundColor = "limegreen";
+  }
+  </script>
+
+<br>
+<button type="button" 
+onclick="document.getElementById('demo').
+innerHTML = Date()">
+Datum en tijd
+</button>
+
+<p id="demo"></p>
+
+<script>
+  const htmlDocument = document.implementation.createHTMLDocument();
+  const customURL = htmlDocument.createElement( 'base' );
+  customURL.href = "https://www.tutorialspoint.com/java/index.htm";
+  htmlDocument.head.append( customURL );
+  console.log("Base URL="+customURL.href);
+  const modifiedURL = htmlDocument.createElement("a");
+  modifiedURL.href = "Andrew.Tate.html ";
+  htmlDocument.body.append( modifiedURL );
+  console.log("After Modifying URL="+ modifiedURL.href );
+</script>
+
+</body>
+</html>
